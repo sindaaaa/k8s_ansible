@@ -50,7 +50,7 @@
 
                 curl -L https://download.opensuse.org/repositories/devel:kubic:libcontainers:stable:cri-o:$VERSION/$OS/Release.key | apt-key add -
                 curl -L https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/$OS/Release.key | apt-key add -     
-      - name: Install cri-o and cri-o tools
+     - name: Install cri-o and cri-o tools
        shell: |
                sudo apt-get update
                sudo apt-get install cri-o cri-o-runc cri-tools -y
